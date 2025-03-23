@@ -1,11 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "./authSlice";
-import LikeSlike from './likeSlice'
+import authReducer, { observeAuthState } from "./authSlice"; 
+import LikeSlice from './likeSlice';
 
-
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     auth: authReducer,
-    likes: LikeSlike,
+    likes: LikeSlice,
   },
 });
+
+store.dispatch(observeAuthState());
+
+export default store;
