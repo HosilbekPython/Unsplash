@@ -99,6 +99,7 @@ function Home() {
     const handleDetails = (image) => {
         navigate(`/details/${image.id}`, { state: { image } });
     };
+console.log(images);
 
     return (
         <div className="p-4">
