@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Cantakt";
 import Like from "./pages/Like";
 import Details from "./pages/Detals";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Register from "./pages/Register";
 import UserDanix from "./pages/UserDanix";
 
